@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<castle>
+  <components>
+    <component
+      service="SampleApp.Model.Interface.IDIContainer, SampleApp.Model"
+      lifestyle="singleton"
+      type="SampleApp.Infrastructure.Container.WindsorContainer, SampleApp.Infrastructure">
+    </component>
+    <component
+      service="SampleApp.Model.Interface.ISampleCalculator, SampleApp.Model"
+      lifestyle="singleton"
+      type="SampleApp.Business.SampleCalculatorService, SampleApp.Business">
+    </component>
+    <component
+      service="SampleApp.Model.Interface.ISeedValueLocator, SampleApp.Model"
+      lifestyle="singleton"
+      type="SampleApp.Data.SeedValueLocatorService, SampleApp.Data">
+    </component>
+  </components>
+</castle>
